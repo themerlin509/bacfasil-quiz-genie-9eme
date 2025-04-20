@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SubjectCard from '@/components/SubjectCard';
 import QuizOptions, { QuizSettings } from '@/components/QuizOptions';
-import { Book, Star, Check } from 'lucide-react';
+import { Calculator, MessageSquare, FlaskConical, Users, Languages, Atom } from 'lucide-react';
 
 const subjects = [
   {
