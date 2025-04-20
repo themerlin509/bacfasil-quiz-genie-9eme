@@ -9,29 +9,32 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-primary text-white shadow-md">
+    <header className="bg-white text-primary shadow-md">
       <div className="container mx-auto py-3 px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/76c3c6c2-8fa3-495d-9eb5-3e4504189fce.png" 
+            src="/lovable-uploads/63e6aa13-5392-4b4e-b719-8f3140cb8106.png" 
             alt="BacFasil Logo" 
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
-          <h1 className="text-2xl font-bold">BacFasil</h1>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold text-primary">BacFasil</h1>
+            <span className="text-sm text-primary/80">9<sup>ème</sup> A.F</span>
+          </div>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-secondary transition-colors">Accueil</Link>
-          <Link to="/progress" className="hover:text-secondary transition-colors">Progression</Link>
-          <Link to="/about" className="hover:text-secondary transition-colors">À propos</Link>
+          <Link to="/" className="text-primary hover:text-secondary transition-colors">Accueil</Link>
+          <Link to="/progress" className="text-primary hover:text-secondary transition-colors">Progression</Link>
+          <Link to="/about" className="text-primary hover:text-secondary transition-colors">À propos</Link>
         </nav>
         
         {/* Mobile Navigation */}
         <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white">
+              <Button variant="ghost" size="icon" className="text-primary">
                 <Menu />
                 <span className="sr-only">Menu</span>
               </Button>
@@ -40,21 +43,21 @@ const Header = () => {
               <nav className="flex flex-col space-y-4 mt-8">
                 <Link 
                   to="/" 
-                  className="text-lg hover:text-primary transition-colors"
+                  className="text-lg text-primary hover:text-secondary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Accueil
                 </Link>
                 <Link 
                   to="/progress" 
-                  className="text-lg hover:text-primary transition-colors"
+                  className="text-lg text-primary hover:text-secondary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Progrès
                 </Link>
                 <Link 
                   to="/about" 
-                  className="text-lg hover:text-primary transition-colors"
+                  className="text-lg text-primary hover:text-secondary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   À propos
