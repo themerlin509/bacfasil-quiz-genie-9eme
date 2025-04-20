@@ -10,15 +10,20 @@ const Header = () => {
 
   return (
     <header className="bg-primary text-white shadow-md">
-      <div className="container mx-auto py-4 px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center space-x-2">
-          <h1 className="text-2xl font-bold">BacFasil 9<sup>ème</sup></h1>
+      <div className="container mx-auto py-3 px-6 flex justify-between items-center">
+        <Link to="/" className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/76c3c6c2-8fa3-495d-9eb5-3e4504189fce.png" 
+            alt="BacFasil Logo" 
+            className="h-10 w-auto"
+          />
+          <h1 className="text-2xl font-bold">BacFasil</h1>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-secondary transition-colors">Accueil</Link>
-          <Link to="/progress" className="hover:text-secondary transition-colors">Progrès</Link>
+          <Link to="/progress" className="hover:text-secondary transition-colors">Progression</Link>
           <Link to="/about" className="hover:text-secondary transition-colors">À propos</Link>
         </nav>
         

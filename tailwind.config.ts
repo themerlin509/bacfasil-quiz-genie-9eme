@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,11 +25,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#ea384c', // Red primary color
+					DEFAULT: '#003DA5', // Deep blue
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: '#0EA5E9', // Blue accent color
+					DEFAULT: '#B91C1C', // Blood red
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {

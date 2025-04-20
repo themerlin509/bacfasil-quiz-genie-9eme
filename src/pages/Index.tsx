@@ -10,19 +10,39 @@ import { Book, Star, Check } from 'lucide-react';
 const subjects = [
   {
     title: "Mathématiques",
-    icon: <Star />,
-    description: "Algèbre, géométrie, arithmétique et plus"
+    icon: <Calculator />,
+    description: "Algèbre, géométrie et arithmétique"
   },
   {
-    title: "Français",
-    icon: <Book />,
-    description: "Grammaire, littérature, compréhension de texte"
+    title: "Communication créole",
+    icon: <MessageSquare />,
+    description: "Langue et communication en créole"
   },
   {
-    title: "Sciences",
-    icon: <Check />,
-    description: "Biologie, physique, chimie et sciences de la terre"
-  }
+    title: "Sciences expérimentales",
+    icon: <FlaskConical />,
+    description: "Biologie et sciences naturelles"
+  },
+  {
+    title: "Sciences sociales",
+    icon: <Users />,
+    description: "Histoire et géographie"
+  },
+  {
+    title: "Langue anglaise",
+    icon: <Languages />,
+    description: "Grammaire et compréhension"
+  },
+  {
+    title: "Langue espagnole",
+    icon: <Languages />,
+    description: "Vocabulaire et conjugaison"
+  },
+  {
+    title: "Physique",
+    icon: <Atom />,
+    description: "Mécanique et électricité"
+  },
 ];
 
 const Index = () => {
